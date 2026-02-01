@@ -1,3 +1,10 @@
+/**
+ * @module AppModule
+ * The root module of the myFlix application.
+ * This module coordinates the bootstrapping of the {@link AppComponent} and integrates
+ * all necessary Angular Material modules, feature components, and core services.
+ */
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,6 +26,18 @@ import { UserLoginFormComponent } from './user-login-form/user-login-form.compon
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 
+/**
+ * The AppModule class.
+ * * @remarks
+ * While the application uses standalone components, this module serves as the
+ * root for bootstrapping the application. It imports all required Material Design
+ * modules to ensure they are available for the UI components.
+ * * @imports
+ * - {@link AppRoutingModule}: For application-wide navigation.
+ * - {@link HttpClientModule}: For making API requests to the myFlix backend.
+ * - `MatModules`: Various Angular Material components for a consistent UI/UX.
+ * - `FeatureComponents`: Components for user authentication and movie display.
+ */
 @NgModule({
   declarations: [],
   imports: [

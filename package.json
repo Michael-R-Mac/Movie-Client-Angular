@@ -2,6 +2,7 @@
   "name": "my-flix-angular-client",
   "version": "0.0.0",
   "scripts": {
+    "doc": "typedoc --entryPointStrategy expand ./src --out docs --name \"myFlix Angular Client\"",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -43,6 +44,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "typedoc": "^0.28.16",
     "typescript": "~5.7.2"
   }
 }
